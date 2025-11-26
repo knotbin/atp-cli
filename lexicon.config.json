@@ -1,20 +1,19 @@
 {
-    "outdir": "./lex",
-    "files": ["./lexicons/**/*.json"],
-    "modules": {
-      "importSuffix": ".ts"
-    },
-    "pull": {
-      "outdir": "./lexicons",
-      "clean": true,
-      "sources": [
-        {
-          "type": "git",
-          "remote": "https://github.com/bluesky-social/atproto",
-          "ref": "main",
-          "pattern": ["lexicons/com/atproto/repo/**"]
-        }
-      ]
-    }
+  "outdir": "./lex",
+  "files": ["./lexicons/**/*.json"],
+  "modules": {
+    "importSuffix": ".ts"
+  },
+  "pull": {
+    "outdir": "./lexicons",
+    "clean": true,
+    "sources": [
+      {
+        "type": "git",
+        "remote": "https://github.com/bluesky-social/atproto",
+        "ref": "main",
+        "pattern": ["lexicons/com/atproto/repo/**"]
+      }
+    ]
   }
-  
+}
